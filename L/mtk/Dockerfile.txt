@@ -1,0 +1,11 @@
+FROM tedwang/aosp-v5
+
+MAINTAINER doxmobile@hotmail.com
+
+USER root
+
+RUN apt-get update \
+        && apt-get install -y zip unzip lib32z1 lib32z1-dev bc ruby \
+        && apt-get clean
+
+USER android
