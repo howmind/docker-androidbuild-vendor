@@ -6,7 +6,7 @@ You can build the image locally.
 
     git clone https://github.com/howmind/docker-androidbuild-vendor.git
     cd docker-androidbuild-vendor/L/mtk
-    docker build -t howmind/docker-androidbuild .
+    docker build -t howmind/androidbuild-l .
 
 ## Usage ##
 You can launch the image using the docker command line, suppose you have prepared a folder for android codebase download at the local host, e.g. **~/codebase,
@@ -33,8 +33,5 @@ Once entering the container, you can operate as the normal developing:
 - Default user account: name=**android**, password=**android**
 - Toolchains as from [http://source.android.com/source/initializing.html](http://source.android.com/source/initializing.html)
 - Repo tool as from [http://source.android.com/source/downloading.html](http://source.android.com/source/downloading.html)
- 
-## Todo ##
-- Setup for ccache
-- <del>Separate base image</del>
+
 
